@@ -1,12 +1,4 @@
-.PHONY: all test clean
-
-all: test
-
-test: obj/j2_c
-	./test_all.sh
-
-obj/j2_c: j2.c
-	${CC} -o $@ $?
-
-clean:
-	rm -f obj/*
+all: j2
+	./test.sh
+j2: j2.cpp
+	g++ -std=c++11 -Wall -O2 -o $@ $<

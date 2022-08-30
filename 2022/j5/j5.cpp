@@ -71,7 +71,7 @@ int main()
 	scanf("%d", &N);
 	scanf("%d", &T);
 
-	trees = malloc(2*sizeof(int)*T);
+	trees = (int*)malloc(2*sizeof(int)*T);
 
 	for(i=0; i<T; i++){
 		int R, C;
