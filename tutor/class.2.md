@@ -8,7 +8,7 @@ cin >> x;
 ```
 - write data to stdout
 ```cpp
-cout >> x >> "\n";
+cout << x << "\n";
 ```
 
 ## Primary data types
