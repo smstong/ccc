@@ -8,8 +8,10 @@ void sort(int a[3])
 	int i=0;
 	for(i=0; i<3; i++){
 		int minIndex = i;
+		int min = a[i];
 		for(int j=i+1; j<3; j++){
-			if(a[j] < a[i]){
+			if(a[j] < min){
+				min = a[j];
 				minIndex = j;
 			}
 		}
