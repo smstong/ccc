@@ -17,6 +17,7 @@ int main(){
 	cin >> orange_price;
 
 	int amount;
+	int minCount = 0;
 	cout << "How much must be raised with ticket sales?\n";
 	cin >> amount;
 	cout << "Combinations are\n";
@@ -30,11 +31,19 @@ int main(){
 						cout << "\t# of GREEN is " << j;
 						cout << "\t# of RED is " << j;
 						cout << "\t# of ORANGE is " << j << endl;
+
+						int count = i+j+k+m;
+						// init
+						if(minCount == 0){
+							minCount = count;
+						}
+						minCount = minCount > count ? count : minCount;
 					}
 				}
 			}
 		}
 	}
+	cout << "Minimum number of tickets to print is " << minCount << endl;
 
 	return 0;
 }
