@@ -1,4 +1,4 @@
-# Canada Computing Contest (CCC) collections
+# Canadian Computing Competition (CCC) collections
 
 * [CCC official website](https://cemc.uwaterloo.ca/contests/past_contests.html#ccc)
 
