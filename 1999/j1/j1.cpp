@@ -25,7 +25,7 @@ int main(){
     int scoreA = 0;
     int scoreB = 0;
     for(i=0, player="A"; i<52; i++){
-	int left = 52 - i; 
+	int left = 51 - i;  // cards left
 	string card = cards[i];
 	int score = 0;
 	if(card == "ace" && left >= 4 && 
