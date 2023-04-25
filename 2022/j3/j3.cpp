@@ -1,32 +1,28 @@
-#include <stdio.h>
-#include <string.h>
+#include <iostream>
+using namespace std;
 
-int is_number(char c)
-{
-	if( c>='0' && c<='9' ) {
-		return 1;
+bool is_number(char c){
+	return c >= '0' && c <= '9';
+}
+
+int main(){
+	string s;
+	cin >> s;
+	for(size_t i=0; i<s.length(); i++){
+		if(s[i] == '+'){
+			cout << " tighten ";
+		}else if(s[i] == '-'){
+			cout << " loosen ";
+		}else{
+			cout << s[i];
+		}
+		if(i<(s.length()-1) && is_number(s[i]) && !is_number(s[i+1])){
+			cout << endl;
+		}
 	}
+	cout << endl;
+
 	return 0;
 }
 
-int main(int argc, char** argv)
-{
-	char line[1024];
-	scanf("%s", line);
-	int n = strlen(line);
-	int i=0;
-	for(i=0; i<n; i++){
-		if(line[i] == '+'){
-			printf(" tighten ");
-		}else if(line[i] == '-'){
-			printf(" loosen ");
-		}else{
-			printf("%c", line[i]);
-		}
-		if((is_number(line[i]) && !is_number(line[i+1]))){
-			printf("\n");
-		}
-		
-	}
-}
 
