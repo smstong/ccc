@@ -32,7 +32,7 @@ int mode(vector<int> v)
 	    }
 	}else{
 	    value = e;
-	    count = 0;
+	    count = 1;
 	}
     }
     return mode;
