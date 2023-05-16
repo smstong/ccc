@@ -26,11 +26,11 @@ int mode(vector<int> v)
     for(int e : v){
 	if(value == e){
 	    count++;
-	}else{
 	    if(count > countMax){
 		countMax = count;
 		mode = value;
 	    }
+	}else{
 	    value = e;
 	    count = 0;
 	}
