@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+/*
+ * Grade 7 math
+ * Perfect Square: a number that is the square of an integer.
+ * Perfect Cube: a number that is the cube of an integer.
+ */
 
 // perfect square
 bool is_perfect_square(int n){
