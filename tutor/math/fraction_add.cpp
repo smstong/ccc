@@ -9,6 +9,9 @@ using namespace std;
 // greatest common factor
 // e.g. gcf(4,6) = 2
 int gcf(int a, int b){
+    if(a<0) a = -a;
+    if(b<0) b = -b;
+
     int small, big;
     if(a<b){
 	small = a;
@@ -30,6 +33,9 @@ int gcf(int a, int b){
 // least common multiple
 // e.g. lcm(4,6) = 12
 int lcm(int a, int b){
+    if(a<0) a = -a;
+    if(b<0) b = -b;
+
     int small, big;
     if(a<b){
 	small = a;
