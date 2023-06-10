@@ -1,3 +1,11 @@
+/******************************************************************************
+ * very long integers arithmetic
+ *
+ * Using string to represent numbers, e.g "99888888882828288282"
+ *
+ * TODO: multiplication and division
+ *
+ *****************************************************************************/
 #include <iostream>
 using namespace std;
 
